@@ -7,6 +7,10 @@ import LinkedinIcon from "./Image/LinkedinIcon.png"
 import GithubIcon from "./Image/GithubIcon.png"
 import EmailIcon from "./Image/EmailIcon.png"
 import ResumeIcon from "./Image/ResumeIcon.png"
+import HOME from './Image/HOME.png'
+import ABOUT from './Image/ABOUT.png'
+import SKILLS from './Image/SKILLS.png'
+import PROJECT from './Image/PROJECT.png'
 
 const Navbar = () => {
     const [nav , setNav] = useState(false)
@@ -25,10 +29,18 @@ const Navbar = () => {
       {/* menu */}
       <div className="hidden md:flex mr-5">
         <ul className="hidden md:flex">
-          <li className='font-Caveat text-[32px]'>Home</li>
-          <li className='font-Caveat text-[32px] mx-2'>About</li>
-          <li className='font-Caveat text-[32px] mx-2'>Skills</li>
-          <li className='font-Caveat text-[32px] mr-4'>Project</li>
+          <li className='relative max-w-xs overflow-hidden bg-cover bg-no-repeat'>
+            <img className='max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]' src={HOME} alt="" />
+          </li>
+          <li className='relative max-w-xs overflow-hidden bg-cover bg-no-repeat'>
+            <img className='max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]' src={ABOUT} alt="" />
+          </li>
+          <li className='max-w-xs transition duration-300 ease-in-out hover:scale-110'>
+            <img className='max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]' src={SKILLS} alt="" />
+          </li>
+          <li className='max-w-xs transition duration-300 ease-in-out hover:scale-110'>
+            <img className='max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]' src={PROJECT} alt="" />
+          </li>
           <li className='rounded-full bg-[#ffffff] border-[2px] border-bodycolor text-bodycolor text-[20px] md:w-[7.5rem] flex items-center hover:text-[#FFFFFF] hover:bg-bodycolor duration-500'>Say Hello</li>
         </ul>
       </div>

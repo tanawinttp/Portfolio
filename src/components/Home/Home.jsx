@@ -8,10 +8,22 @@ const Home = () => {
   return (
     <div name="home" className="w-full h-screen bg-bodycolor">
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-        <p className="font-Caveat  text-5xl text-[#F5FCCD]">Hi 👋 my name is</p>
+      <div
+        className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
+        <div
+          className="flex justify-center mt-[5rem]"
+          data-aos="flip-left"
+          data-aos-duration="1500"
+        >
+          <img className="w-[300px]" src={Computer} alt="" />
+        </div>
+
+        <p className="font-Caveat text-5xl text-[#F5FCCD]">Hi 👋 my name is</p>
         <h1 className="font-Caveat text-4xl sm:text-7xl text-[#FFFFFF]">
-          Tanawin Procharoenchai
+          Tanawin Porcharoenchai
         </h1>
         <h2 className="font-Caveat text-4xl sm:text-7xl text-[#FFFFFF]">
           I'm a Junior Software Developer.
@@ -29,6 +41,13 @@ const Home = () => {
             </span>
           </button>
         </div>
+      </div>
+      <div
+        className="flex justify-end mt-[2rem]"
+        data-aos="fade-up-left"
+        data-aos-duration="1500"
+      >
+        <img className="w-[300px]" src={Catinbox} alt="" />
       </div>
     </div>
   );

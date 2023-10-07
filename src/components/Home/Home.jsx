@@ -22,7 +22,7 @@ const Home = () => {
           I'm focused on building responsive Full-stack web applications.
         </p>
         <div>
-          <button className="font-Mogra group text-[1.5rem] text-[#FFFFFF] border-2 px-6 py-3 my-2 flex items-center hover:bg-navcolor hover:border-[#F5FCCD]">
+          <button className="font-Mogra group text-[1.5rem] text-[#FFFFFF] border-2 px-6 py-3 my-2 flex items-center hover:bg-navcolor hover:border-[#F5FCCD] hover:text-bodycolor">
             View Work
             <span className="w-[2.5rem] ml-3 group-hover:rotate-90 duration-300">
               <img src={Arrow} alt="" />

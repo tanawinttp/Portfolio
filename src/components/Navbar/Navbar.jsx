@@ -1,20 +1,16 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 // icon image
 import LogoNavbar from "./Image/LogoNavbar.png";
 import Menuicon from "./Image/Menuicon.png";
 import Exiticon from "./Image/Exiticon.png";
-import LinkedinIcon from "./Image/LinkedinIcon.png"
-import GithubIcon from "./Image/GithubIcon.png"
-import EmailIcon from "./Image/EmailIcon.png"
-import ResumeIcon from "./Image/ResumeIcon.png"
-import HOME from './Image/HOME.png'
-import ABOUT from './Image/ABOUT.png'
-import SKILLS from './Image/SKILLS.png'
-import PROJECT from './Image/PROJECT.png'
+import LinkedinIcon from "./Image/LinkedinIcon.png";
+import GithubIcon from "./Image/GithubIcon.png";
+import EmailIcon from "./Image/EmailIcon.png";
+import ResumeIcon from "./Image/ResumeIcon.png";
 
 const Navbar = () => {
-    const [nav , setNav] = useState(false)
-    const handleClick = () => setNav(!nav)
+  const [nav, setNav] = useState(false);
+  const handleClick = () => setNav(!nav);
 
   return (
     <div className="fixed w-full h-[100px] flex justify-between items-center px-4 bg-navcolor">
@@ -29,64 +25,129 @@ const Navbar = () => {
       {/* menu */}
       <div className="hidden md:flex mr-5">
         <ul className="hidden md:flex">
-          <li className='relative max-w-xs overflow-hidden bg-cover bg-no-repeat'>
-            <img className='max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]' src={HOME} alt="" />
+          <li className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+            <p className="font-Caveat text-4xl  max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]">
+              Home
+            </p>
           </li>
-          <li className='relative max-w-xs overflow-hidden bg-cover bg-no-repeat'>
-            <img className='max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]' src={ABOUT} alt="" />
+          <li className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+            <p className="font-Caveat text-4xl mx-2 max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]">
+              About
+            </p>
           </li>
-          <li className='max-w-xs transition duration-300 ease-in-out hover:scale-110'>
-            <img className='max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]' src={SKILLS} alt="" />
+          <li className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+            <p className="font-Caveat text-4xl mx-2 max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]">
+              Skills
+            </p>
           </li>
-          <li className='max-w-xs transition duration-300 ease-in-out hover:scale-110'>
-            <img className='max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]' src={PROJECT} alt="" />
+          <li className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
+            <p className="font-Caveat text-4xl mr-4 max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]">
+              Project
+            </p>
           </li>
-          <li className='rounded-full bg-[#ffffff] border-[2px] border-bodycolor text-bodycolor text-[20px] md:w-[7.5rem] flex items-center hover:text-[#FFFFFF] hover:bg-bodycolor duration-500'>Say Hello</li>
+
+          <li className="rounded-full bg-[#ffffff] border-[2px] border-bodycolor text-bodycolor text-[20px] md:w-[7.5rem] flex items-center hover:text-[#FFFFFF] hover:bg-bodycolor duration-500">
+            Say Hello
+          </li>
         </ul>
       </div>
 
       {/* menu mobile icon */}
       <div onClick={handleClick} className="md:hidden w-[35px] z-10">
-        {!nav ? <img className='w-[100%]' src={Menuicon} alt="icon menu" /> : <img className='w-[100%]' src={Exiticon} alt="exit menu"/>}
+        {!nav ? (
+          <img className="w-[100%]" src={Menuicon} alt="icon menu" />
+        ) : (
+          <img className="w-[100%]" src={Exiticon} alt="exit menu" />
+        )}
       </div>
 
       {/* Mobile menu */}
-      <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#419197] flex flex-col justify-center items-center'}>
+      <ul
+        className={
+          !nav
+            ? "hidden"
+            : "absolute top-0 left-0 w-full h-screen bg-[#419197] flex flex-col justify-center items-center"
+        }
+      >
         <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">Home</li>
         <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">About</li>
-        <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">Skills</li>
-        <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">Project</li>
-        <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">Contact</li>
+        <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">
+          Skills
+        </li>
+        <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">
+          Project
+        </li>
+        <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">
+          Contact
+        </li>
       </ul>
 
       {/* Social icons */}
-      <div className="hidden md:flex fixed flex-col top-[35%] left-0">
+      <div className="hidden xl:flex fixed flex-col top-[35%] left-0">
         <ul>
-
-          <li className='w-[165px] h-[70px] flex justify-between items-center ml-[-88px] hover:ml-[0px] duration-[200ms] rounded-t-lg hover:rounded-br-lg bg-[#BBD6FF]'>
-            <a className='flex justify-between items-center w-full font-Mogra' href="https://www.linkedin.com/in/tanawin/" target="_blank" rel="noopener noreferrer">
-              Linkedin  <img className='w-[55px] mr-[-3px]' src={LinkedinIcon} alt="Linked logo" />
+          <li className="w-[165px] h-[70px] flex justify-between items-center ml-[-88px] hover:ml-[0px] duration-[200ms] rounded-t-lg hover:rounded-br-lg bg-[#BBD6FF]">
+            <a
+              className="flex justify-between items-center w-full font-Mogra"
+              href="https://www.linkedin.com/in/tanawin/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Linkedin{" "}
+              <img
+                className="w-[55px] mr-[-3px]"
+                src={LinkedinIcon}
+                alt="Linked logo"
+              />
             </a>
           </li>
 
-          <li className='w-[165px] h-[70px] flex justify-between items-center ml-[-88px] hover:ml-[0px] duration-[200ms]  hover:rounded-r-lg bg-[#D6E5E5]'>
-            <a className='flex justify-between items-center w-full font-Mogra' href="/" target="_blank" rel="noopener noreferrer">
-              Git hub <img className='w-[55px] mr-[-3px]' src={GithubIcon} alt="Github logo" />
+          <li className="w-[165px] h-[70px] flex justify-between items-center ml-[-88px] hover:ml-[0px] duration-[200ms]  hover:rounded-r-lg bg-[#D6E5E5]">
+            <a
+              className="flex justify-between items-center w-full font-Mogra"
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Git hub{" "}
+              <img
+                className="w-[55px] mr-[-3px]"
+                src={GithubIcon}
+                alt="Github logo"
+              />
             </a>
           </li>
 
-          <li className='w-[165px] h-[70px] flex justify-between items-center ml-[-88px] hover:ml-[0px] duration-[200ms]  hover:rounded-r-lg bg-[#FF9393]'>
-            <a className='flex justify-between items-center w-full font-Mogra' href="/" target="_blank" rel="noopener noreferrer">
-              Email <img className='w-[55px] mr-[-3px]' src={EmailIcon} alt="Email logo" />
+          <li className="w-[165px] h-[70px] flex justify-between items-center ml-[-88px] hover:ml-[0px] duration-[200ms]  hover:rounded-r-lg bg-[#FF9393]">
+            <a
+              className="flex justify-between items-center w-full font-Mogra"
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Email{" "}
+              <img
+                className="w-[55px] mr-[-3px]"
+                src={EmailIcon}
+                alt="Email logo"
+              />
             </a>
           </li>
 
-          <li className='w-[165px] h-[70px] flex justify-between items-center ml-[-88px] hover:ml-[0px] duration-[200ms] rounded-b-lg hover:rounded-r-lg bg-[#C4E3B5]'>
-            <a className='flex justify-between items-center w-full font-Mogra' href="/" target="_blank" rel="noopener noreferrer">
-              Resume <img className='w-[55px] mr-[-3px]' src={ResumeIcon} alt="Resume logo" />
+          <li className="w-[165px] h-[70px] flex justify-between items-center ml-[-88px] hover:ml-[0px] duration-[200ms] rounded-b-lg hover:rounded-r-lg bg-[#C4E3B5]">
+            <a
+              className="flex justify-between items-center w-full font-Mogra"
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume{" "}
+              <img
+                className="w-[55px] mr-[-3px]"
+                src={ResumeIcon}
+                alt="Resume logo"
+              />
             </a>
           </li>
-
         </ul>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 // import image
 import Computer from "./image/Computer.png";
 import Catinbox from "./image/Catinbox.png";
@@ -21,9 +22,28 @@ const Home = () => {
           <img className="w-[300px]" src={Computer} alt="" />
         </div>
 
-        <p className="font-Caveat text-5xl text-[#F5FCCD]">Hi 👋 my name is</p>
+        <p className="font-Caveat text-5xl text-[#F5FCCD]">
+          <TypeAnimation
+            sequence={["Hi 👋 my name is", 2000, "👋 Hello my name is", 2000]}
+            wrapper="div"
+            cursor={true}
+            repeat={Infinity}
+          />
+        </p>
         <h1 className="font-Caveat text-4xl sm:text-7xl text-[#FFFFFF]">
-          Tanawin Porcharoenchai
+          <TypeAnimation
+            sequence={[
+              "Tanawin Pocharoenchai",
+              2000,
+              "Toy",
+              2000,
+              "3oy3oy3oy",
+              2000,
+            ]}
+            wrapper="div"
+            cursor={true}
+            repeat={Infinity}
+          />
         </h1>
         <h2 className="font-Caveat text-4xl sm:text-7xl text-[#FFFFFF]">
           I'm a Junior Software Developer.

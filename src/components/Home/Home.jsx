@@ -43,11 +43,11 @@ const Home = () => {
         </div>
       </div>
       <div
-        className="flex justify-end mt-[2rem]"
+        className="hidden min-[683px]:flex justify-end mt-[2rem]"
         data-aos="fade-up-left"
         data-aos-duration="1500"
       >
-        <img className="w-[300px]" src={Catinbox} alt="" />
+        <img className="w-[250px]" src={Catinbox} alt="" />
       </div>
     </div>
   );

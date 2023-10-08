@@ -5,14 +5,13 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen pt-10 bg-bodycolor text-[#FFFFFF]"
+      className="w-full h-screen bg-bodycolor text-[#FFFFFF] flex flex-col justify-center "
     >
       <div className="flex flex-col justify-center items-center w-full">
         <div className="max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
             <p className="text-4xl font-Caveat inline border-b-4 ">About</p>
           </div>
-          <div></div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-4xl font-Caveat flex items-center">
@@ -29,7 +28,11 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center my-10">
+      <div
+        className="flex justify-center my-10"
+        data-aos="flip-down"
+        data-aos-duration="1500"
+      >
         <img src={Sleep} alt="" />
       </div>
     </div>

@@ -6,7 +6,7 @@ import Arrow from "./image/Arrow.png";
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-bodycolor">
+    <div name="home" className="w-full h-screen bg-bodycolor pt-[5rem]">
       {/* Container */}
       <div
         className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center"
@@ -43,7 +43,7 @@ const Home = () => {
         </div>
       </div>
       <div
-        className="hidden min-[683px]:flex justify-end mt-[2rem]"
+        className="hidden min-[683px]:flex justify-end mt-[2rem] "
         data-aos="fade-up-left"
         data-aos-duration="1500"
       >

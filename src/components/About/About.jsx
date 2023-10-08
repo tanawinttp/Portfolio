@@ -1,4 +1,5 @@
 import React from "react";
+import Sleep from "./image/Sleep.png";
 
 const About = () => {
   return (
@@ -27,6 +28,9 @@ const About = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center my-10">
+        <img src={Sleep} alt="" />
       </div>
     </div>
   );

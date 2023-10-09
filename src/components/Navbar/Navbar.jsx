@@ -92,7 +92,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Linkedin{" "}
+              Linkedin
               <img
                 className="w-[55px] mr-[-3px]"
                 src={LinkedinIcon}
@@ -104,11 +104,11 @@ const Navbar = () => {
           <li className="w-[165px] h-[70px] flex justify-between items-center ml-[-88px] hover:ml-[0px] duration-[200ms]  hover:rounded-r-lg bg-[#D6E5E5]">
             <a
               className="flex justify-between items-center w-full font-Mogra"
-              href="/"
+              href="https://github.com/tanawinttp"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Git hub{" "}
+              Git hub
               <img
                 className="w-[55px] mr-[-3px]"
                 src={GithubIcon}
@@ -124,7 +124,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Email{" "}
+              Email
               <img
                 className="w-[55px] mr-[-3px]"
                 src={EmailIcon}
@@ -140,7 +140,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Resume{" "}
+              Resume
               <img
                 className="w-[55px] mr-[-3px]"
                 src={ResumeIcon}

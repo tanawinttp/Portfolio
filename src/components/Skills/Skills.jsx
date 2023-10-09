@@ -15,15 +15,15 @@ import Figma from "./image/Figma.png";
 
 const Skills = () => {
   return (
-    <div className="bg-bodycolor w-full h-full">
+    <div name="skills" className="bg-bodycolor w-full h-full pt-[5rem]">
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-auto">
+      <div className="max-w-[1200px] mx-auto p-4 flex flex-col justify-center w-full h-auto">
         {/* หัวข้อ Skills */}
         <div>
           <p className="text-4xl font-Caveat inline border-b-4 text-[#FFFFFF]">
             Skills 🦾
           </p>
-          <p className="py-4 font-Caveat text-[#FFFFFF] text-2xl">
+          <p className="py-4 font-Caveat text-[#FFFFFF] text-2xl md:text-4xl">
             These are the Tech Stacks I learned and used in my project.
           </p>
         </div>

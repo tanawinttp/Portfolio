@@ -7,9 +7,9 @@ import Arrow from "./image/Arrow.png";
 
 const Home = () => {
   return (
-    <div className="w-full h-auto bg-bodycolor ">
+    <div name="home" className="w-full h-auto bg-bodycolor ">
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center">
+      <div className="max-w-[1200px] mx-auto px-8 flex flex-col justify-center">
         {/* image computer */}
         <div
           className="flex justify-center mt-[5rem]"

@@ -3,9 +3,12 @@ import Sleep from "./image/Sleep.png";
 
 const About = () => {
   return (
-    <div className="w-full h-auto bg-bodycolor text-[#FFFFFF] flex flex-col justify-center">
+    <div
+      name="about"
+      className="w-full h-auto pt-[5rem] bg-bodycolor text-[#FFFFFF] flex flex-col justify-center"
+    >
       <div className="flex flex-col justify-center items-center w-full">
-        <div className="max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8">
+        <div className="max-w-[1200px] w-full px-4 grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
             <p className="text-4xl font-Caveat inline border-b-4">About</p>
           </div>

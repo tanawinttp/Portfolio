@@ -6,7 +6,11 @@ export default {
       Caveat: ["Caveat Brush", "cursive"],
       Mogra: ["Mogra", "cursive"],
     },
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        fluid: "repeat(auto-fit, minmax(18rem, 1fr))",
+      },
+    },
     colors: {
       bodycolor: "#12486B",
       navcolor: "#78D6C6",

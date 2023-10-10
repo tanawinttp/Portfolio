@@ -61,7 +61,7 @@ const Home = () => {
           </button>
         </div>
         {/* image cat in box */}
-        <div className="flex justify-end">
+        <div name="about" className="flex justify-end">
           <img className="w-[200px] md:w-[250px]" src={Catinbox} alt="" />
         </div>
       </div>

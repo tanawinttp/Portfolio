@@ -3,10 +3,7 @@ import Sleep from "./image/Sleep.png";
 
 const About = () => {
   return (
-    <div
-      name="about"
-      className="w-full h-auto pt-[5rem] bg-bodycolor text-[#FFFFFF] flex flex-col justify-center"
-    >
+    <div className="w-full h-auto pt-[5rem] bg-bodycolor text-[#FFFFFF] flex flex-col justify-center">
       <div className="flex flex-col justify-center items-center w-full">
         <div className="max-w-[1200px] w-full px-4 grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
@@ -30,6 +27,7 @@ const About = () => {
         </div>
         {/* Image */}
         <div
+          name="skills"
           className="md:my-10 "
           data-aos="flip-down"
           data-aos-duration="1500"

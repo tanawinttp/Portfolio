@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { Link } from "react-scroll";
 // icon image
 import LogoNavbar from "./Image/LogoNavbar.png";
 import Menuicon from "./Image/Menuicon.png";
@@ -27,27 +28,37 @@ const Navbar = () => {
         <ul className="hidden md:flex">
           <li className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <p className="font-Caveat text-4xl  max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]">
-              Home
+              <Link to="home" smooth={true} duration={500}>
+                Home
+              </Link>
             </p>
           </li>
           <li className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <p className="font-Caveat text-4xl mx-2 max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]">
-              About
+              <Link to="about" smooth={true} duration={500}>
+                About
+              </Link>
             </p>
           </li>
           <li className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <p className="font-Caveat text-4xl mx-2 max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]">
-              Skills
+              <Link to="skills" smooth={true} duration={500}>
+                Skills
+              </Link>
             </p>
           </li>
           <li className="relative max-w-xs overflow-hidden bg-cover bg-no-repeat">
             <p className="font-Caveat text-4xl mr-4 max-w-xs transition duration-300 ease-in-out hover:scale-110 w-[75%]">
-              Project
+              <Link to="projects" smooth={true} duration={500}>
+                Project
+              </Link>
             </p>
           </li>
 
           <li className="rounded-full bg-[#ffffff] border-[2px] border-bodycolor text-bodycolor text-[20px] md:w-[7.5rem] flex items-center hover:text-[#FFFFFF] hover:bg-bodycolor duration-500">
-            Say Hello
+            <Link to="contact" smooth={true} duration={500}>
+              Say hello
+            </Link>
           </li>
         </ul>
       </div>
@@ -69,16 +80,35 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#419197] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">Home</li>
-        <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">About</li>
         <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">
-          Skills
+          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+            Home
+          </Link>
         </li>
         <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">
-          Project
+          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+            About
+          </Link>
         </li>
         <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">
-          Contact
+          <Link onClick={handleClick} to="skills2" smooth={true} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">
+          <Link
+            onClick={handleClick}
+            to="projects"
+            smooth={true}
+            duration={500}
+          >
+            Project
+          </Link>
+        </li>
+        <li className="py-6 font-Caveat text-[#FFFFFF] text-[2.5rem]">
+          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
         </li>
       </ul>
 
@@ -124,7 +154,9 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Email
+              <Link to="contact" smooth={true} duration={500}>
+                Email
+              </Link>
               <img
                 className="w-[55px] mr-[-3px]"
                 src={EmailIcon}

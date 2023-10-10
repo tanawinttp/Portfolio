@@ -15,7 +15,7 @@ import Figma from "./image/Figma.png";
 
 const Skills = () => {
   return (
-    <div name="skills" className="bg-bodycolor w-full h-full pt-[5rem]">
+    <div name="skills2" className="bg-bodycolor w-full h-full pt-[5rem]">
       {/* Container */}
       <div className="max-w-[1200px] mx-auto p-4 flex flex-col justify-center w-full h-auto">
         {/* หัวข้อ Skills */}

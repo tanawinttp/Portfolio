@@ -154,9 +154,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Link to="contact" smooth={true} duration={500}>
-                Email
-              </Link>
+              Email
               <img
                 className="w-[55px] mr-[-3px]"
                 src={EmailIcon}

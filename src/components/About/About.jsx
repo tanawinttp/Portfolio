@@ -17,11 +17,12 @@ const About = () => {
           </div>
           <div className="font-Caveat text-2xl">
             <p>
-              I am passionate about building excellent software that improves
-              the lives of those around me. I specialize in creating software
-              for clients ranging from individuals and small-businesses all the
-              way to large enterprise corporations. What would you do if you had
-              a software expert available at your fingertips?
+              My experiences as a Junior Full-Stack Developer have prepared me
+              for a successful career in the tech industry and I am excited to
+              continue learning and growing as a developer. <br />I have gained
+              valuable experience in building web applications using a variety
+              of technologies. My expertise includes the MERN stack (MongoDB,
+              Express, React, and Node.js)
             </p>
           </div>
         </div>

@@ -48,7 +48,7 @@ const Home = () => {
         </h2>
         <p className="font-Caveat text-[1.5rem] text-[#FFFFFF] py-4 max-w-[700px]">
           I'm a Junior Software Developer specializing in building (and
-          occasionally designing) exceptional digital experiences, Currenttly.
+          occasionally designing) exceptional digital experiences, Currently.
           I'm focused on building responsive Full-stack web applications.
         </p>
 

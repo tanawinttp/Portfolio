@@ -150,7 +150,7 @@ const Navbar = () => {
           <li className="w-[165px] h-[70px] flex justify-between items-center ml-[-88px] hover:ml-[0px] duration-[200ms]  hover:rounded-r-lg bg-[#FF9393]">
             <a
               className="flex justify-between items-center w-full font-Mogra"
-              href="/"
+              href="mailto: tanawin.ttp@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -168,7 +168,7 @@ const Navbar = () => {
           <li className="w-[165px] h-[70px] flex justify-between items-center ml-[-88px] hover:ml-[0px] duration-[200ms] rounded-b-lg hover:rounded-r-lg bg-[#C4E3B5]">
             <a
               className="flex justify-between items-center w-full font-Mogra"
-              href="/"
+              href="https://drive.google.com/file/d/1szPVGowS1-zzQav-de-NYwWmzSymbcn0/view"
               target="_blank"
               rel="noopener noreferrer"
             >

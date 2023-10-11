@@ -1,5 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-scroll";
 // import image
 import Computer from "./image/Computer.png";
 import Catinbox from "./image/Catinbox.png";
@@ -53,12 +54,14 @@ const Home = () => {
 
         <div>
           {/* Button View Work*/}
-          <button className="font-Mogra group text-[1.5rem] text-[#FFFFFF] border-2 px-6 py-3 my-2 flex items-center hover:bg-navcolor hover:border-[#F5FCCD] hover:text-bodycolor">
-            View Work
-            <span className="w-[2.5rem] ml-3 group-hover:rotate-90 duration-300">
-              <img src={Arrow} alt="" />
-            </span>
-          </button>
+          <Link to="projects" smooth={true} duration={500}>
+            <button className="font-Mogra group text-[1.5rem] text-[#FFFFFF] border-2 px-6 py-3 my-2 flex items-center hover:bg-navcolor hover:border-[#F5FCCD] hover:text-bodycolor">
+              View Work
+              <span className="w-[2.5rem] ml-3 group-hover:rotate-90 duration-300">
+                <img src={Arrow} alt="" />
+              </span>
+            </button>
+          </Link>
         </div>
         {/* image cat in box */}
         <div name="about" className="flex justify-end">

@@ -53,7 +53,7 @@ const Projects = () => {
               {/* button */}
               <div className="flex gap-5 justify-center my-[1rem]">
                 <a
-                  href="https://github.com/JSD5-Team-13/frontend-rocket-fit"
+                  href="https://github.com/JSD5-Team-13"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#D8B8E6] rounded-md px-[1.5rem] max-w-[7rem] h-[2.5rem] text-[#E88109] flex items-center justify-center hover:bg-[#C987E9] hover:text-[#F8C78E]"
@@ -63,7 +63,7 @@ const Projects = () => {
                   </span>
                 </a>
                 <a
-                  href="https://github.com/JSD5-Team-13/frontend-rocket-fit"
+                  href="https://rocket-fit.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#D8B8E6] rounded-md px-[1.5rem] max-w-[7rem] h-[2.5rem] text-[#E88109] flex items-center justify-center hover:bg-[#C987E9] hover:text-[#F8C78E]"

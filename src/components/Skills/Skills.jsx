@@ -12,6 +12,7 @@ import Expressjs from "./image/Expressjs.png";
 import Mongodb from "./image/Mongodb.png";
 import Git from "./image/Git.png";
 import Figma from "./image/Figma.png";
+import Nextjs from "./image/Nextjs.png";
 
 const Skills = () => {
   return (
@@ -58,6 +59,15 @@ const Skills = () => {
               alt="React icon"
             />
             <p className="my-2 font-Mogra">React</p>
+          </div>
+
+          <div className="shadow-md rounded-md shadow-[#040c16] bg-[#F5FCCD] hover:scale-110 duration-500">
+            <img
+              className="w-[5.5rem] my-[5px] mx-auto"
+              src={Nextjs}
+              alt="React icon"
+            />
+            <p className="my-2 font-Mogra">Nextjs</p>
           </div>
 
           <div className="shadow-md rounded-md shadow-[#040c16] pt-[20px] bg-[#F5FCCD] hover:scale-110 duration-500">

@@ -1,5 +1,3 @@
-import React from "react";
-
 // import image skill
 import Html from "./image/Html.png";
 import Css from "./image/Css.png";
